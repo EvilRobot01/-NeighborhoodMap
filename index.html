@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="My places in Tempe">
 		<meta name="author" content="HaroldDRF">
 		<title>My places in Tempe, AZ</title>
@@ -10,22 +11,22 @@
 	</head>
 
 	<body>
-		<div id="map" data-bind="click: hideElements"></div>
-			<div id="pageTitle"><h2>My places in Tempe, AZ</h2></div>
-				<div id="hamburger" data-bind="click: showElements, clickBubble: false">
+		<div id="map" class="map" data-bind="click: hideElements"></div>
+			<div id="pageTitle" class="pageTitle"><h2>My places in Tempe, AZ</h2></div>
+				<div id="hamburger" class="hamburger" data-bind="click: showElements, clickBubble: false">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 					<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
 					</svg>
 				</div>
 				<div data-bind="css: navStatus">
-				<input id="search" placeholder="Search interest" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
-				<div id="list-holder">
-					<ul id="list-view" data-bind="foreach: visible">
-						<li id="list-name" data-bind="text: name, click: $parent.showInfo"></li>
+				<input id="search" class="search" placeholder="Search interest" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+				<div id="list-holder" class="list-holder">
+					<ul id="list-view" class="list-view" data-bind="foreach: visible">
+						<li id="list-name" class="list-name" data-bind="text: name, click: $parent.showInfo"></li>
 					</ul>
 				</div>
 		</div>
-		<div id="error"></div>
+		<div id="error" class="error"></div>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>

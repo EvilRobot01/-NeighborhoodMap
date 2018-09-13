@@ -1,128 +1,129 @@
 html,
 body {
-  font-family: Lucida Console;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    font-family: Lucida Console;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-#map {
-  height: 100%;
+.map {
+    height: 100%;
 }
 
-#pageTitle{
-  position: fixed;
-  top: 0px;
-  left: 1%;
-  width: 30%;
-  color: #1E90FF;
+.pageTitle {
+    position: fixed;
+    top: 0px;
+    left: 1%;
+    width: 30%;
+    color: #1E90FF;
 }
 
 svg {
-  display: none;
+    display: none;
 }
 
-#search {
-  position: fixed;
-  left: 1%;
-  top: 45px;
-  height: 30px;
-  width: 19.5%;
-  font-size: 15px;
+.search {
+    position: fixed;
+    left: 1%;
+    top: 45px;
+    height: 30px;
+    width: 19.5%;
+    font-size: 15px;
 }
 
-#list-view {
-  position: fixed;
-  height: 70%;
-  left: 1%;
-  overflow: auto;
-  top: 85px;
-  width: 20%;
-  background-color: #1E90FF;
-  color: #FFFFF0;
-  margin: 0;
-  padding: 1%;
-  font-size: 120%;
-  border-style: solid;
-  border-radius: 15px 50px 15px;
+.list-view {
+    position: fixed;
+    height: 70%;
+    left: 1%;
+    overflow: auto;
+    top: 85px;
+    width: 20%;
+    background-color: #1E90FF;
+    color: #FFFFF0;
+    margin: 0;
+    padding: 1%;
+    font-size: 120%;
+    border-style: solid;
+    border-radius: 15px 50px 15px;
 }
 
-#error {
-  position: fixed;
-  bottom: 1%;
-  left: 1%;
-  width: 20%;
+.error {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    width: 20%;
 }
 
 li:after {
-content: ", ";
+    content: ", ";
 }
 
 li:last-child:after {
-content: "";
+    content: "";
 }
 
 @media only screen and (max-width: 650px) {
 
     h2 {
-      font-size: 12px;
+        font-size: 12px;
     }
 
-    #pic {
-      display: none;
+    .pic {
+        display: none;
     }
 
-    #hamburger {
-    position: fixed;
-    left: 85%;
-    right: 0;
-    top: 0;
-    width: 40px;
+    .hamburger {
+        position: fixed;
+        left: 85%;
+        right: 0;
+        top: 0;
+        width: 40px;
     }
 
     svg {
-    display: block;
-    width: 40px;
-    fill: #000;
+        display: block;
+        width: 40px;
+        fill: #000;
     }
 
-    #pageTitle {
-    position: fixed;
-    top: 0px;
-    width: 30%;
-    left: 5%;
+    .pageTitle {
+        position: fixed;
+        top: 0px;
+        width: 30%;
+        left: 5%;
     }
 
     .navClosed {
-      display: none;
+        display: none;
     }
 
-    #search {
-    position: fixed;
-    top: 40px;
-    height: 30px;
-    width: 29%;
-    font-size: 8px;
+    .search {
+        position: fixed;
+        top: 40px;
+        height: 30px;
+        width: 29%;
+        font-size: 8px;
     }
 
-    #list-view {
-    position: fixed;
-    height:27%;
-    overflow: auto;
-    top: 80px;
-    left: 5%;
-    width: 30%;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    border-radius: 15px 50px 30px;
+    .list-view {
+        position: fixed;
+        height: 27%;
+        overflow: auto;
+        top: 80px;
+        left: 5%;
+        width: 30%;
+        background-color: #1E90FF;
+        color: #FFFFF0;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        border-radius: 15px 50px 30px;
     }
 
-    #error {
-    position: fixed;
-    bottom: 1%;
-    left: 5%;
-    width: 30%;
+    .error {
+        position: fixed;
+        bottom: 1%;
+        left: 5%;
+        width: 30%;
     }
 }

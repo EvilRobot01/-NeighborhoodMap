@@ -1,41 +1,48 @@
 
+"use strict";
+
 var locations = [
      {
         name: 'Flashback Games',
             lat: 33.422976,
             lng: -111.915741,
+            id: "517c37347ab46cdbdd5b010a"
     },
     {
         name: 'The Chuckbox',
             lat: 33.423902,
-            lng: -111.936609
+            lng: -111.936609,
+            id: "4bf1d51999d02d7fdd9ec948"
         
     }, {
-       name: 'ASU School of Sustainable Engineering and the Built Environment',
-            lat: 33.424351,
-            lng: -111.935831
+       name: 'Four Peaks Brewing Company',
+            lat: 33.4195052281187,
+            lng: -111.91593825817108,
+            id: "4a3ad368f964a52052a01fe3"
         
     }, {
         name: 'ASU Gammage',
             lat: 33.417922,
-            lng: -111.938056
+            lng: -111.938056,
+            id: "49dd62fdf964a52005601fe3"
         
     }, {
         name: 'Inferno Escape Room',
             lat: 33.424025,
-            lng: -111.915187
+            lng: -111.915187,
+            id: "5b8b78990ff4f900395ffecf"
         
     }, {
-       name: 'Sonoran Cycles Bike Shop Tempe',
-            lat: 33.424864,
-            lng: -111.925743
+       name: 'Tempe History Museum',
+            lat: 33.392193333759174,
+            lng: -111.9274077409424,
+            id: "4b896ad7f964a5204b3432e3"
         
     }];
 
 
 var map;
 function initMap() {
-    "use strict";
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 33.425428, lng: -111.940095},
         zoom: 13,
@@ -96,7 +103,7 @@ var ViewModel = function () {
 
         $.ajax({
             url: 'https://api.foursquare.com/v2/venues/' + placeItem.id() +
-            '?client_id=2XRDLP41TS3MKI34441A4JEU3NYYAFICJUP4A0FH4KBOPZBL&client_secret=ALPEL0BQWWBA42X25O0UW0IKJIL54QKBJBYDJJIMAWDPKVLS&v=20130815',
+            '?client_id=MD3TE1OHD2IME1LN2BF1WDETFFTGH4VRQC2AUFWQ2PL4EX5P&client_secret=K40OAIQGWSGD525NLHHLFF3AFUGWGCIVJKRI0RJAMX2S0VDQ&v=20130815',
             dataType: "json",
             success: function (data) {
                 var result = data.response.venue;
